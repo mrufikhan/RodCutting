@@ -17,7 +17,6 @@ namespace RodCutting
 
             Console.WriteLine("Optimal Solution is:{0}", result);
         }
-
         static int CutRod(int[] profit, int n)
         {
             if (n == 0) // first element is 0
@@ -45,7 +44,6 @@ namespace RodCutting
 
             return MemoizedCutRodAux(profit, r, n);
         }
-
         static int MemoizedCutRodAux(int[] profit, int[] r, int n)
         {
             if (n > 0 && r[n - 1] >= 0)
